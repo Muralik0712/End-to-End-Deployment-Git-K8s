@@ -101,7 +101,7 @@ http://<jenkins-ip>:8080
 - Add GitHub repository:  
 
 https://github.com/
-<your-username>/devops-project.git
+<your-username>/End-to-End-Deployment-Git-K8s.git
 
 - Enable: **GitHub hook trigger for GITScm polling**  
 
@@ -131,10 +131,10 @@ set -e
 echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
 
 # Build Docker image
-docker build -t murali007/devops-project:v1 .
+docker build -t muralik007/devops-project:v1 .
 
 # Push Docker image
-docker push murali007/devops-project:v1
+docker push muralik007/devops-project:v1
 Dockerfile content (in project root):
 FROM tomcat:9-jdk17
 COPY taxi-booking/target/taxi-booking-1.0.1.war /usr/local/tomcat/webapps/
