@@ -85,8 +85,8 @@ devops-project/
 - Security group: open ports **22** (SSH) and **8080** (Jenkins UI)
 
 ```bash
-sudo dnf update -y
-sudo dnf install -y java-17-amazon-corretto maven docker unzip git
+sudo yum update -y
+sudo yum install -y java-17-amazon-corretto maven docker unzip git
 sudo systemctl enable --now docker
 ```
 
